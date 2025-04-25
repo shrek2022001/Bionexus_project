@@ -15,7 +15,7 @@ BioNexus tackles these with a seamless NLP pipeline and smart storage/annotation
 
 ---
 
-## ⚙️ Features
+##   Features
 
 -  **Named Entity Recognition** and **Keyword Tagging**
 -  **Classification** and **Information Extraction** using **fine-tuned BERT**
