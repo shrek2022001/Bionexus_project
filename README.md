@@ -1,7 +1,57 @@
-# BioNexus
+#  BioNexus: Biomedical Literature Mining System
 
-This methodology report outlines the development of a **Biomedical Literature Mining System** designed to address challenges in retrieving and analyzing an ever-growing body of biological literature. The project aims to tackle issues like limited integration with databases, complexity of tools, data security concerns, and scalability limitations by creating a seamless, user-friendly, and secure system. The system will integrate with platforms like PubMed, offer an intuitive interface for tagging and collaboration, and ensure robust data security through encryption and role-based access controls. Scalability is achieved via cloud computing and distributed processing, enabling efficient handling of vast biomedical datasets.
+**BioNexus** is a BERT-powered biomedical literature mining and tagging system built to address the challenge of retrieving and analyzing vast biomedical text corpora from sources like **PubMed**. This project integrates **natural language processing (NLP)**, **data visualization**, and **SQL-based knowledge storage** to support efficient and intelligent literature analysis.
 
-Key tools include **Python** for its versatility, **NLTK** for natural language processing (NLP) tasks, **Pandas** for data manipulation, and **Matplotlib/Seaborn** for visualization. The **BERT model** is employed for text analysis, leveraging its bidirectional representation and transformer architecture for understanding context in biomedical literature. Fine-tuning BERT enables classification, information extraction, and other specific tasks. An **SQLite database** supports structured data storage, connected via an **Entity-Relationship Diagram (ERD)** that defines relationships between articles, authors, keywords, and annotations.
+---
 
-The dataset comprises metadata from biomedical articles, including titles, abstracts, and keywords sourced from PubMed and other journals. The system addresses **information overload** and **data fragmentation** by offering enhanced retrieval capabilities and promoting standardization. Advanced search features and collaborative tools simplify literature reviews and foster interdisciplinary research. The methodology ensures that biomedical researchers can securely and efficiently analyze growing volumes of literature, bridging gaps in current systems and advancing discoveries in biomedicine.
+##  Motivation
+
+Biomedical researchers often face:
+-  Information overload from ever-growing publication databases
+-  Inefficient search and retrieval tools
+-  Poor integration between literature and structured databases
+
+BioNexus tackles these with a seamless NLP pipeline and smart storage/annotation capabilities.
+
+---
+
+## ⚙️ Features
+
+-  **Named Entity Recognition** and **Keyword Tagging**
+-  **Classification** and **Information Extraction** using **fine-tuned BERT**
+-  Intuitive data exploration via interactive Jupyter notebooks
+-  **SQLite backend** with clean **ERD-based schema** for articles, authors, keywords, and annotations
+-  Future-ready security via token access and role-based tagging (roadmap)
+
+---
+
+##  Tech Stack
+
+| Layer         | Tools Used                                  |
+|---------------|----------------------------------------------|
+| NLP Core      | `BERT`, `NLTK`, `spaCy`                     |
+| Data Analysis | `pandas`, `matplotlib`, `seaborn`           |
+| Backend DB    | `SQLite` with custom schema (SQLAlchemy)    |
+| Interface     | `Jupyter Notebook`, Python APIs             |
+
+---
+
+
+---
+
+##  Key Outcomes
+
+- Built a pipeline that **extracts biomedical concepts** from abstracts
+- Linked text with structured data storage via SQL
+- Identified entities like diseases, genes, chemicals from **PubMed abstracts**
+- Showcased ability to **scale literature mining** using NLP and cloud-friendly architecture
+
+---
+
+##  Try It Out
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+
